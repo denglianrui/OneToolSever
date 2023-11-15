@@ -2,6 +2,7 @@ package com.ot.onetool.Service;
 
 import com.baomidou.mybatisplus.extension.service.IService;
 import com.ot.onetool.POJO.UserPO;
+import com.ot.onetool.POJO.UserVO;
 
 /**
  * <p>
@@ -13,4 +14,5 @@ import com.ot.onetool.POJO.UserPO;
  */
 public interface IUserService extends IService<UserPO> {
 
+    UserVO loginCheck(String account,String password);
 }
